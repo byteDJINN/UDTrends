@@ -1,0 +1,1 @@
+My vision is a website that shows current teen slang trends, like a wordmap. It should automatically update with the new trendy words. 

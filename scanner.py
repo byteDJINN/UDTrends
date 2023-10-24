@@ -10,7 +10,7 @@ def get(i):
 
 total = 2700000
 dic = []
-with Pool(100) as p:
+with Pool(42) as p:
   for _ in tqdm.tqdm(p.imap_unordered(get, range(1, total)), total=total):
     if _:
       dic.append(_)

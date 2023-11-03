@@ -18,9 +18,9 @@ def get(i):
 
 # most recent word (https://www.urbandictionary.com/yesterday.php) will contain it)
 end = 17968830
-frequency = 5 # every nth word is saved <-- EDIT THIS
+frequency = 10 # every nth word is saved <-- EDIT THIS
 total = int(end/frequency)
-name = "all-20"
+name = "all-10"
 
 print("Saving "+str(1/frequency*100)+"% of words")
 # make dictionary an array of dictionaries

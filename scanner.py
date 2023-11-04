@@ -7,7 +7,7 @@ def get(i):
   global dic
   if i > 100 and i % round(i, -len(str(i))+1) == 0: # logarithmically saving - every 10, 100, 1000, 10000, etc.
     print("SAVING")
-    with open(str(name)+".json", "w", encoding="utf-8") as f:
+    with open(str(name)+f"/all-{i}.json", "w", encoding="utf-8") as f:
       f.write(json.dumps(list(dic), indent=4, sort_keys=True))
   try:
     dic.append(requests.get(

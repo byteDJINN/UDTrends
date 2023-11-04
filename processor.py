@@ -27,4 +27,4 @@ for i in data:
 
 # get the top 10 words
 top10 = sorted(rank.items(), key=lambda x: x[1], reverse=True)[:20]
-print(top10)
+print("\n".join([i[0] for i in top10]))
